@@ -24,3 +24,21 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.ion-color-red {
+    --ion-color-base: #ff0000;
+    --ion-color-base-rgb: 255, 0, 0;
+    --ion-color-contrast: #fff;
+    --ion-color-contrast-rgb: 255, 255, 255;
+    --ion-color-shade: #e50000;
+    --ion-color-tint: #ff1919;
+}
+
+.ion-color-rose {
+    --ion-color-base: #CD5C5C;
+    --ion-color-base-rgb: 205, 92, 92;
+    --ion-color-contrast: #fff;
+    --ion-color-contrast-rgb: 255, 255, 255;
+    --ion-color-shade: #b85252;
+    --ion-color-tint: #d26c6c;
+}

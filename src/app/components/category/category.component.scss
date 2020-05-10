@@ -1,0 +1,37 @@
+[uk-grid] {
+    background: url(../../../assets/img/bg/bg-image.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    color: #ffffff;
+
+    .uk-card {
+        border-radius: .3rem;
+
+        h2,
+        p {
+            color: #ffffff;
+        }
+
+        h2 {
+            padding: 0px 5px;
+            font-size: 2.4rem;
+        }
+
+        .uk-card-body {
+            padding: 2px;
+
+            p {
+                font-weight: bold;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    div:nth-child(even)>.uk-card {
+        background-color: #CD5C5C;
+    }
+
+    div:nth-child(odd)>.uk-card {
+        background-color: #A6ACAF;
+    }
+}

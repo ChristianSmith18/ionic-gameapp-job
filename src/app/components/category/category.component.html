@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="red">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="uk-child-width-1-1@xs uk-child-width-1-2@s uk-grid-match" uk-grid>
+    <div *ngFor="let card of cards">
+      <div class="uk-card uk-card-default">
+        <h2 class="uk-text-center">{{ card.title }}</h2>
+        <img src="../../../assets/img/categories/catwoman-short.png" alt="" style="width: 100%;">
+        <div class="uk-card-body">
+          <p class="uk-text-center">Resuelto 1/100</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

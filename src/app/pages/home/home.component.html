@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="red">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-segment [(ngModel)]="segment" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="inicio">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Inicio</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="chat">
+      <ion-icon name="chatbubbles"></ion-icon>
+      <ion-label>Chat</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="contactos">
+      <ion-icon name="list-circle"></ion-icon>
+      <ion-label>Contactos</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+
+  <div class="uk-grid-match" uk-grid>
+    <div class="uk-width-1-1">
+      <div class="uk-card uk-card-default uk-card-body">
+        <p class="uk-text-justify">A través de este módulo podrás navegar por el aplicativo...</p>
+      </div>
+    </div>
+    <div class="uk-width-1-1">
+      <div class="uk-card uk-card-default uk-card-body uk-child-width-1-1 box">
+        <ion-icon name="layers"></ion-icon>
+        <p class="uk-text-center" style="width: 100%;">Cuestionario</p>
+      </div>
+    </div>
+    <div class="uk-width-1-2">
+      <div class="uk-card uk-card-default uk-card-body uk-child-width-1-1 box">
+        <ion-icon name="person"></ion-icon>
+        <p class="uk-text-center" style="width: 100%;">Perfil</p>
+      </div>
+    </div>
+    <div class="uk-width-1-2">
+      <div class="uk-card uk-card-default uk-card-body uk-child-width-1-1 box">
+        <ion-icon name="star"></ion-icon>
+        <p class="uk-text-center" style="width: 100%;">Mis Favoritos</p>
+      </div>
+    </div>
+  </div>
+</ion-content>
