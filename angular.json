@@ -19,7 +19,8 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "assets": [{
+            "assets": [
+              {
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
@@ -30,7 +31,8 @@
                 "output": "./svg"
               }
             ],
-            "styles": [{
+            "styles": [
+              {
                 "input": "node_modules/uikit/dist/css/uikit.css"
               },
               {
@@ -40,16 +42,20 @@
                 "input": "src/global.scss"
               }
             ],
-            "scripts": [{
-              "input": "node_modules/uikit/dist/js/uikit.js"
-            }]
+            "scripts": [
+              {
+                "input": "node_modules/uikit/dist/js/uikit.js"
+              }
+            ]
           },
           "configurations": {
             "production": {
-              "fileReplacements": [{
-                "replace": "src/environments/environment.ts",
-                "with": "src/environments/environment.prod.ts"
-              }],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -59,11 +65,13 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [{
-                "type": "initial",
-                "maximumWarning": "2mb",
-                "maximumError": "5mb"
-              }]
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
             },
             "ci": {
               "progress": false
@@ -99,7 +107,8 @@
             "karmaConfig": "karma.conf.js",
             "styles": [],
             "scripts": [],
-            "assets": [{
+            "assets": [
+              {
                 "glob": "favicon.ico",
                 "input": "src/",
                 "output": "/"
@@ -126,7 +135,9 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {
@@ -167,6 +178,10 @@
               "devServerTarget": "app:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

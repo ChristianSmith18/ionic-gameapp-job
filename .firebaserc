@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "mastertravelpage": {
+      "hosting": {
+        "app": [
+          "mastertravelpage"
+        ]
+      }
+    }
+  }
+}
